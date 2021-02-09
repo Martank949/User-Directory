@@ -3,14 +3,15 @@ import Table from "./components/Table";
 import Card from "./components/Card";
 import Jumbotron from "./components/Jumbotron";
 import Navbar from "./components/Navbar";
-// import SearchResultContainer from "./components/SearchResultContainer/SearchResultContainer";
+import FetchRandomUser from "./components/FetchRandomUser";
 
 function App() {
 	return (
 		<div className="container">
-			<Jumbotron>
-				<Navbar />
-			</Jumbotron>
+			<Jumbotron />
+			<Navbar />
+			<FetchRandomUser />
+			<Table />
 			<Card />
 		</div>
 	);
