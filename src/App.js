@@ -8,8 +8,9 @@ import Navbar from "./components/Navbar";
 function App() {
 	return (
 		<div className="container">
-			<Jumbotron />
-			<Navbar />
+			<Jumbotron>
+				<Navbar />
+			</Jumbotron>
 			<Card />
 		</div>
 	);
