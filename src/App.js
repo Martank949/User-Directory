@@ -1,5 +1,5 @@
 import React from "react";
-// import "./App.css";
+import Table from "./components/Table";
 import Card from "./components/Card";
 import Jumbotron from "./components/Jumbotron";
 import Navbar from "./components/Navbar";
