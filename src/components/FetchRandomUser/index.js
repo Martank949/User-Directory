@@ -23,9 +23,16 @@ export default class FetchRandomUser extends React.Component {
 		}
 		return (
 			<div>
-				<h1>{this.state.person.name.first}</h1>
-				<h1>{this.state.person.name.last}</h1>
-				<img src={this.state.person.picture.thumbnail} />
+				<ul>
+					<li>
+						Full Name: {this.state.person.name.first},
+						{this.state.person.name.last}
+					</li>
+					<li>City: {this.state.person.location.city}</li>
+					<li>State: {this.state.person.location.state}</li>
+					<li>Country: {this.state.person.location.country}</li>
+					<img src={this.state.person.picture.thumbnail} />
+				</ul>
 			</div>
 		);
 	}
