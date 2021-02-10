@@ -36,7 +36,14 @@ export default class FetchRandomUser extends React.Component {
 					<img src={this.state.person.picture.thumbnail} />
 				</ul> */}
 				{this.state.person.map((persons, index) => (
-					<Card firstName={persons.name.first} lastName={persons.name.last} />
+					<Card
+						firstName={persons.name.first}
+						lastName={persons.name.last}
+						city={persons.location.city}
+						state={persons.location.state}
+						country={persons.location.country}
+						image={persons.picture.thumbnail}
+					/>
 				))}
 			</div>
 		);
