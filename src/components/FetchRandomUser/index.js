@@ -37,6 +37,7 @@ export default class FetchRandomUser extends React.Component {
 				</ul> */}
 				{this.state.person.map((persons, index) => (
 					<Card
+						key={index}
 						firstName={persons.name.first}
 						lastName={persons.name.last}
 						city={persons.location.city}
