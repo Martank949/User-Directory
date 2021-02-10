@@ -1,16 +1,18 @@
 import React from "react";
 
-function Card() {
+function Card(props) {
 	return (
 		<div className="card">
 			<div className="card-body">
 				<p className="card-text">
-					Aliquip dolore commodo nostrud minim. Cillum do enim non ullamco.
-					Commodo magna eu ex mollit sunt amet fugiat. In irure eu enim id ea
-					sit nostrud incididunt ad adipisicing.Aliquip dolore commodo nostrud
-					minim. Cillum do enim non ullamco. Commodo magna eu ex mollit sunt
-					amet fugiat. In irure eu enim id ea sit nostrud incididunt ad
-					adipisicing.
+					<ul>
+						<li>
+							<strong>First Name:</strong> {props.firstName}
+						</li>
+						<li>
+							<strong>Last Name:</strong> {props.lastName}
+						</li>
+					</ul>
 				</p>
 			</div>
 		</div>

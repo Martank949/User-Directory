@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../Card";
 
 export default class FetchRandomUser extends React.Component {
 	state = {
@@ -6,10 +7,11 @@ export default class FetchRandomUser extends React.Component {
 		person: null,
 	};
 	async componentDidMount() {
-		const url = "https://api.randomuser.me/";
+		const url = "https://api.randomuser.me/?results=100";
 		const response = await fetch(url);
 		const data = await response.json();
-		this.setState({ person: data.results[0], loading: false });
+
+		this.setState({ person: data.results, loading: false });
 		console.log(data.results[0]);
 	}
 
@@ -23,7 +25,7 @@ export default class FetchRandomUser extends React.Component {
 		}
 		return (
 			<div>
-				<ul>
+				{/* <ul>
 					<li>
 						Full Name: {this.state.person.name.first},
 						{this.state.person.name.last}
@@ -32,7 +34,10 @@ export default class FetchRandomUser extends React.Component {
 					<li>State: {this.state.person.location.state}</li>
 					<li>Country: {this.state.person.location.country}</li>
 					<img src={this.state.person.picture.thumbnail} />
-				</ul>
+				</ul> */}
+				{this.state.person.map((persons, index) => (
+					<Card firstName={persons.name.first} lastName={persons.name.last} />
+				))}
 			</div>
 		);
 	}
