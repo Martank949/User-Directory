@@ -1,15 +1,13 @@
 import React from "react";
-// import Table from "./components/Table";
 import Card from "./components/Card";
 import Jumbotron from "./components/Jumbotron";
 import FetchRandomUser from "./components/FetchRandomUser";
 
 function App() {
 	return (
-		<div className="container">
+		<div className="container-fluid">
 			<Jumbotron />
 			<FetchRandomUser />
-			{/* <Table /> */}
 			<Card />
 		</div>
 	);

@@ -1,10 +1,10 @@
 import React from "react";
 
-function Table() {
+function Table(props) {
 	return (
-		<table>
-			<caption>User Directory</caption>
+		<table className="table table-info">
 			<tr>
+				<th scope="col">#</th>
 				<th scope="col">First Name:</th>
 				<th scope="col">Last Name:</th>
 				<th scope="col">City:</th>
@@ -17,9 +17,19 @@ function Table() {
 				<th scope="col">Picture:</th>
 			</tr>
 			<tr>
-				<th scope="row">TR-7</th>
-				<td></td>
-				<td></td>
+				<th scope="row">{props.id}</th>
+				<td>{props.firstName}</td>
+				<td>{props.lastName}</td>
+				<td>{props.city}</td>
+				<td>{props.state}</td>
+				<td>{props.email}</td>
+				<td>{props.age}</td>
+				<td>{props.gender}</td>
+				<td>{props.phone}</td>
+				<td>{props.cell}</td>
+				<td>
+					<img alt={props.firstName} src={props.picture}></img>
+				</td>
 			</tr>
 		</table>
 	);
