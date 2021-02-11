@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# User-Directory (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an API employee directory using React. I broke my application UI into components, using component state, and responses to user events.
 
-## Available Scripts
+### This is the link to the GitHub Repo
 
-In the project directory, you can run:
+https://github.com/Martank949/User-Directory
 
-### `npm start`
+### This is the link to the live page:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://martank949.github.io/User-Directory/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#
 
-### `npm test`
+[![License](https://img.shields.io/badge/License-Apache-blue.svg "License Badge")]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Table of Contents
 
-### `npm run build`
+1. GitHub User
+2. Email Address
+3. Project Description
+4. Installation Instructions
+5. Usage Information
+6. Business Context
+7. Contribution Guidelines
+8. Test Instructions
+9. License
+10. Contact Information
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## GitHub Username:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Username: martank949
+GitHub: [GitHub](https://github.com/martank949)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Email Address:
 
-### `npm run eject`
+martinzb949@gmail.com
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Description of my Project:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Homework-14
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This is a custom API employee directory. I used a table component to display my API responses. Given a table of random users generated from the [Random User API](https://randomuser.me/), when the user loads the page, a table of employees should render. The user is able to view each profile by:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. First Name
+2. Last Name
+3. City
+4. State
+5. Email
+6. Age
+7. Gender
+8. Phone Number
+9. Cell Number
+10. Picture
 
-## Learn More
+## Installation Instructions:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. type npm install
+2. view the file by typing npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage Story
 
-### Code Splitting
+As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Business Context:
 
-### Analyzing the Bundle Size
+An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribution Guidelines:
 
-### Making a Progressive Web App
+1. Fork it!
+2. Create your feature branch: git checkout -b my-new-feature.
+3. Commit your changes: git commit -am 'Add some features'.
+4. Push to the branch: git push origin my-new-feature.
+5. Submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Test Instructions:
 
-### Advanced Configuration
+Check out the installation instructions above in this file as an example.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more information about the license, please click on the link below:
+[License](https://opensource.org/licenses/Apache)
