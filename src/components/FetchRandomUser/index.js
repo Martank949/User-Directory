@@ -1,5 +1,6 @@
 import React from "react";
-import Card from "../Card";
+// import Card from "../Card";
+import Table from "../Table";
 
 export default class FetchRandomUser extends React.Component {
 	state = {
@@ -25,6 +26,7 @@ export default class FetchRandomUser extends React.Component {
 		}
 		return (
 			<div>
+				{/* BELOW IS WILL DISPLAY USING THE Un List*/}
 				{/* <ul>
 					<li>
 						Full Name: {this.state.person.name.first},
@@ -35,7 +37,8 @@ export default class FetchRandomUser extends React.Component {
 					<li>Country: {this.state.person.location.country}</li>
 					<img src={this.state.person.picture.thumbnail} />
 				</ul> */}
-				{this.state.person.map((persons, index) => (
+				{/* BELOW IS WILL DISPLAY USING THE CARD*/}
+				{/* {this.state.person.map((persons, index) => (
 					<Card
 						key={index}
 						firstName={persons.name.first}
@@ -44,6 +47,22 @@ export default class FetchRandomUser extends React.Component {
 						state={persons.location.state}
 						country={persons.location.country}
 						image={persons.picture.thumbnail}
+					/>
+				))} */}
+				{/* BELOW IS WILL DISPLAY USING THE Table*/}
+				{this.state.person.map((persons, index) => (
+					<Table
+						id={index}
+						firstName={persons.name.first}
+						lastName={persons.name.last}
+						city={persons.location.city}
+						state={persons.location.state}
+						email={persons.email}
+						age={persons.location.country}
+						gender={persons.gender}
+						phone={persons.phone}
+						cell={persons.cell}
+						picture={persons.picture.thumbnail}
 					/>
 				))}
 			</div>
